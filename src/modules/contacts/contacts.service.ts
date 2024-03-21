@@ -3,13 +3,13 @@ import { CreateContactDto } from './dto/create-contact.dto';
 import { UpdateContactDto } from './dto/update-contact.dto';
 
 @Injectable()
-export class ContactService {
+export class ContactsService {
   create(createContactDto: CreateContactDto) {
     return 'This action adds a new contact';
   }
 
   findAll() {
-    return `This action returns all contact`;
+    return `This action returns all contacts`;
   }
 
   findOne(id: number) {
