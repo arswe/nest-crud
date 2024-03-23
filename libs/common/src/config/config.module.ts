@@ -1,9 +1,12 @@
 import { Module } from '@nestjs/common';
-import { ConfigModule as NestCinfigModule } from '@nestjs/config';
+import {
+  ConfigService,
+  ConfigModule as NestCinfigModule,
+} from '@nestjs/config';
 
 @Module({
   imports: [NestCinfigModule.forRoot()],
-  providers: [],
-  exports: [],
+  providers: [ConfigService],
+  exports: [ConfigService],
 })
 export class ConfigModule {}
